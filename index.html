@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>An Online Registration Form</title>
+        <meta name="description" content="Techdegree Project 3: Online Registration Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>THE CODE REVIEW</h1>
+        </header>
+        <main>
+            
+            <form action="index.html" method="post">
+                <div>
+                    <h1>Signup for our newsletter</h1>
+                    <p>Get the latest news on how your code is right in your inbox</p>
+                </div>
+                <hr class="hr1">
+                <hr class="hr2">
+
+                <fieldset class="contact">
+                    <legend class="legend-head">Contact Information</legend>
+
+                    <label for="name"> Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required">  
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user_email" placeholder="Required"> 
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone"> 
+                    
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                        <option value="NJ">New Jersey</option>
+                        <option value="NY">Why would I list any other state?</option>
+                        <option value="CA">You cant be serious?</option>
+                        <option value="FL">Just choose New Jersey</option>
+                        <option value="PA">OK.... Fine</option>
+                        <option value="NOTLISTED">State Not Listed(Because you asked nicely)</option>
+                    </select>
+
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip">
+                </fieldset>
+
+                <hr class="hr3">
+
+                <fieldset class="news">
+                    <legend class="legend-head">Newsletter</legend>
+
+                    <p>Select the newsletters that you would like to receive</p>
+
+                    <input type="checkbox" id="htmlnews" value="news-html" name="user_interest"><label class="checklabel" for="htmlnews">HTML News</label><br>
+
+                    <input type="checkbox" id="cssnews" value="news-css" name="user_interest"><label class="checklabel" for="cssnews">CSS News</label><br>
+
+                    <input type="checkbox" id="jsnews" value="news-js" name="user_interest"><label class="checklabel" for="jsnews">JavaScript</label>
+
+                    <p>Newsletter Format</p>
+                    <input type="radio" id="html" value="html" name="user_news_format"><label for="html" class="checklabel">HTML</label><br>
+                    <input type="radio" id="plaintext" value="plaintext" name="user_news_format"><label for="plaintext" class="checklabel">Plain text</label>
+
+                    <p>Other Topics you'd like to hear about</p>
+
+                    <textarea id="topics" name="user_topics"></textarea>
+
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                    <h4>&copy; THE CODE REVIEW</h4>
+
+            </form>
+        </main>
+        
+
+    </body>
+</html>
