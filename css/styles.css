@@ -96,7 +96,11 @@ form fieldset .legend-head {
 label {
     display: block;
     margin-bottom: 8px;
-  }  
+}
+
+label:hover {
+    font-size: larger;
+}
 
 input[type="text"],
 input[type="password"],
